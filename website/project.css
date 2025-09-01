@@ -5,6 +5,12 @@
         box-sizing: border-box;
     }
 
+     html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
     :root {
         /* Live site color variables */
         --wp--preset--color--black: #000000;
@@ -743,7 +749,7 @@ background-image: linear-gradient(rgba(27, 63, 111, 0.5), rgba(27, 63, 111, 0.5)
   display: flex;
   flex-direction: column;
   gap: 6px;
-  height: 450px;
+  height: 540px;
 }
 @keyframes zoomIn {
   0% {
@@ -1302,5 +1308,22 @@ background-image: linear-gradient(rgba(27, 63, 111, 0.5), rgba(27, 63, 111, 0.5)
 
       .projects-left h2 {
          font-size: 32px;
+      }
+
+      .skills-card {
+        position: relative;
+        z-index: 3;
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+        padding: 36px 36px 36px 36px;
+        max-width: 420px;
+        min-width: 340px;
+        margin-left: auto;
+        margin-right: 5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        height: 550px;
       }
 }

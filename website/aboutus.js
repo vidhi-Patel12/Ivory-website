@@ -173,6 +173,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+const navbar = document.querySelector('.navbar'); // or #navbar depending on your HTML
+
+
 // Sticky Navigation
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
@@ -215,6 +218,8 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-up').forEach(el => {
     observer.observe(el);
 });
+
+const faqToggles = document.querySelectorAll('.faq-toggle'); 
 
 // FAQ Accordion
 faqToggles.forEach(toggle => {
