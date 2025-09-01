@@ -4,6 +4,12 @@
         box-sizing: border-box;
     }
 
+ html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
     :root {
         /* Live site color variables */
         --wp--preset--color--black: #000000;
@@ -598,7 +604,7 @@
   
   .form-card .cta-btn.secondary {
     margin-top: 10px;
-    width: 35%;
+    width: 56%;
   }
   
  
